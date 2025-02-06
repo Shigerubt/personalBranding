@@ -7,8 +7,8 @@ body {
 }
 
 button {
-    background-color: rgb(83, 168, 75);
-    color: rgb(255, 253, 253);
+    background-color: #22162B;
+    color: #eef0f2;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -24,7 +24,7 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     color: white;
-    background-color: rgb(241, 2, 182);
+    background-color: #DD1155;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -35,3 +35,12 @@ button {
 .button:hover {
     background-color: #5f0034;
 }
+
+h1 {
+    color: #DD1155;
+}
+
+.presentacion {
+    text-align: center;
+    margin-top: 20%;
+}   
