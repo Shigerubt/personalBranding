@@ -45,8 +45,18 @@ strong {
     color: var(--primary-color);
 }
 
+.presentacion__enlaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the items horizontally */
+    gap: 10px;
+    width: 100%; /* Ensure the container takes full width */
+}
+
 .presentacion__enlaces__link {
-    display: inline-block;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center align the items horizontally */
     padding: 10px 20px;
     font-size: 16px;
     width: 250px;
@@ -56,8 +66,7 @@ strong {
     border-radius: 5px;
     border: 2px solid var(--primary-color);
     cursor: pointer;
-    justify-content: center;
-    gap: 10px;
+    gap: 10px; /* Add space between the icon and the text */
 }
 
 .presentacion__enlaces__link:hover {
@@ -66,7 +75,7 @@ strong {
 
 h1 {
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
@@ -92,13 +101,6 @@ h1 {
     margin-top: 20px;
 }
 
-.img-small {
-    display: flex;
-    width: 30%;
-    height: auto;
-    align-items: center;
-}
-
 .presentacion__contenido__titulo {
     font-size: 36px;
 }
@@ -106,22 +108,23 @@ h1 {
 .presentacion__contenido__texto {
     font-size: 18px;
     line-height: 1.6;
-}
-
-.presentacion__enlaces {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 100%; /* Ensure it takes full width of its container */
 }
 
 .presentacion__enlaces__subtitulo {
-    font-size: 2vw; /* Responsive font size */
+    font-size: 20px; /* Responsive font size */
     text-align: center;
     margin-bottom: 20px;
-    width: 100%;
+    width: 100%; /* Match the width of .presentacion__contenido__texto */
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: visible; /* Ensure the text is not cut off */
+}
+
+.img-small {
+    display: flex;
+    width: 30%;
+    height: auto;
+    align-items: center;
 }
 
 .footer {
@@ -138,8 +141,8 @@ h1 {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
     padding: 20px;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -161,4 +164,5 @@ h1 {
 .logo {
     width: 100px;
     height: auto;
+    margin-right: 20px; /* Add some space between the logo and the navigation */
 }
