@@ -32,12 +32,12 @@ button {
     background-color: var(--primary-color);
     border: none;
     color: var(--text-color);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    font-size: 1rem; /* 16px */
+    margin: 0.25rem 0.125rem; /* 4px 2px */
     cursor: pointer;
 }
 
@@ -49,7 +49,7 @@ strong {
     display: flex;
     flex-direction: column;
     align-items: center; /* Center align the items horizontally */
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
     width: 100%; /* Ensure the container takes full width */
 }
 
@@ -57,16 +57,16 @@ strong {
     display: flex; /* Use flexbox for alignment */
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center align the items horizontally */
-    padding: 10px 20px;
-    font-size: 16px;
-    width: 250px;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    font-size: 1rem; /* 16px */
+    width: 15.625rem; /* 250px */
     color: var(--text-color);
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid var(--primary-color);
+    border-radius: 0.3125rem; /* 5px */
+    border: 0.125rem solid var(--primary-color); /* 2px */
     cursor: pointer;
-    gap: 10px; /* Add space between the icon and the text */
+    gap: 0.625rem; /* 10px */
 }
 
 .presentacion__enlaces__link:hover {
@@ -74,17 +74,18 @@ strong {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.25rem; /* 36px */
     font-family: var(--font-primary);
     font-weight: 400;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
     width: 100%;
     white-space: nowrap;
 }
 
 .presentacion {
     display: flex;
+    flex-direction: column; /* Ensure elements are stacked vertically */
     align-items: center;
     margin: 5%;
     justify-content: center;
@@ -94,27 +95,27 @@ h1 {
 }
 
 .presentacion__contenido {
-    width: 615px;
+    width: 38.4375rem; /* 615px */
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 1.25rem; /* 20px */
+    margin-top: 1.25rem; /* 20px */
 }
 
 .presentacion__contenido__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .presentacion__contenido__texto {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     line-height: 1.6;
     width: 100%; /* Ensure it takes full width of its container */
 }
 
 .presentacion__enlaces__subtitulo {
-    font-size: 20px; /* Responsive font size */
+    font-size: 1.25rem; /* 20px */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem; /* 20px */
     width: 100%; /* Match the width of .presentacion__contenido__texto */
     white-space: nowrap;
     overflow: visible; /* Ensure the text is not cut off */
@@ -127,40 +128,32 @@ h1 {
     align-items: center;
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin: 15%;
-    padding: 24px;
-    background-color: var(--primary-color);
-    font-family: "montserrat", sans-serif;
-    font-size: 24px;
+.header, .footer {
+    width: 100%;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
 }
 
-.header {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center;
-    flex-direction: column;
-    padding: 24px;
-    background-color: var(--background-color);
+.footer {
+    position: relative;
+    bottom: 0;
+    font-size: 1rem; /* 16px */
     color: var(--text-color);
+    background-color: var(--primary-color);
 }
 
 .navigation {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 }
 
 .navigation__list {
-    font-size: 30px;
+    font-size: 1.875rem; /* 30px */
     list-style: none;
     cursor: pointer;
     margin: 0;
-    padding: 5px 10px; 
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
 }
 
 .navigation__list:hover {
@@ -169,7 +162,8 @@ h1 {
 }
 
 .logo {
-    width: 200px;
+    width: 12.5rem; /* 200px */
     height: auto;
-    margin-right: 20px; /* Add some space between the logo and the navigation */
+    margin-right: 1.25rem; /* 20px */
 }
+
