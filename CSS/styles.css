@@ -103,7 +103,7 @@ h1 {
 
 .presentacion__contenido__titulo {
     font-size: 36px;
-    text-align: left; /* Align the title to the left */
+    text-align: center; 
     align-self: flex-start; /* Ensure the title aligns to the left */
     width: 100%; /* Ensure it takes full width of its container */
 }
@@ -119,8 +119,7 @@ h1 {
     font-size: 18px;
     text-align: justify;
     line-height: 1.6;
-    width: 100%; /* Ensure it takes full width of its container */
-    flex: 1;
+    width: 50%; /* Ensure it takes full width of its container */
 }
 
 .presentacion__enlaces__subtitulo {
@@ -128,13 +127,11 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
     width: 100%; /* Match the width of .presentacion__contenido__texto */
-    white-space: nowrap;
-    overflow: visible; /* Ensure the text is not cut off */
 }
 
 .img-small {
     display: flex;
-    width: 30%;
+    width: 15%;
     padding-bottom: 30px;
     height: auto;
     align-items: center;
