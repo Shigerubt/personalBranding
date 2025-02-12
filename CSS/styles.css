@@ -143,6 +143,8 @@ h1 {
     font-size: 1rem; /* 16px */
     color: var(--primary);
     background-color: var(--primary-color);
+    text-align: center;
+    padding: 10px 0;
 }
 
 .navigation {
@@ -164,12 +166,16 @@ h1 {
 
 .navigation__list:hover {
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var (--text-color);
 }
 
 .logo {
     width: 12.5rem; /* 200px */
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the logo within its container */
 }
 
 .presentacion__box {
@@ -237,6 +243,10 @@ h1 {
     .navigation__list {
         font-size: 1.5rem; /* 24px */
     }
+    .logo {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Phone */
@@ -256,5 +266,7 @@ h1 {
 
     .logo {
         width: 10rem; /* 160px */
+        justify-content: center;
+        align-items: center;
     }
 }
